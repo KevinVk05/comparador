@@ -1,0 +1,14 @@
+
+
+.bounce {
+  animation: bounce 0.5s;
+}
+
+.fade-up {
+  animation: fadeUp 0.5s forwards;
+}
+
+.lista-prods-cesta {
+  position: relative;
+  overflow: auto !important;
+}

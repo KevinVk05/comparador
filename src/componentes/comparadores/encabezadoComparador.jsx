@@ -1,0 +1,33 @@
+
+const EncabezadoComparador = ({ titulo, texto1, texto2, img }) => {
+  return (
+    <div>
+      <div className="header-box my-4 d-flex flex-wrap align-items-center rounded p-4 justify-content-center justify-content-lg-between">
+        <div className="w-75">
+          <h2 className="mb-3 fs-2">{titulo}</h2>
+          <div className="mb-0">
+            {texto1} <br />
+            <span className="fw-medium">¡Ahorra tiempo y dinero en tus compras! ¿No sabes por dónde empezar? Explora nuestras 
+                <a className="text-primary text-decoration-none fw-bold" href="#listas-prediseñadas"> listas prediseñadas </a> 
+                 y encuentra la opción perfecta para una compra inteligente y económica.</span>
+          </div>
+        </div>
+        <img
+          src={img}
+          alt="Logo Comparador"
+          className="ms-3"
+
+          style={{width: '170px'}}
+        />
+      </div>
+
+      {texto2 && (
+        <section className="search-section shadow-sm rounded p-3 my-4">
+          <p className="mb-0 fs-5 fw-bold text-center">{texto2}</p>
+        </section>
+      )}
+    </div>
+  )
+}
+
+export default EncabezadoComparador;
