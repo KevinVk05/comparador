@@ -28,7 +28,6 @@ const ComparadorAdmin = () => {
         realizarBusqueda()
     };
 
-    scrollArriba()
 
     const realizarBusqueda = (nombreProducto) => {
         const productoABuscar = nombreProducto || producto
