@@ -27,8 +27,6 @@ const Comparador2 = () => {
     realizarBusqueda()
   };
 
-  scrollArriba()
-
   const {
     imagen,
     setImagen,
