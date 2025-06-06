@@ -56,6 +56,7 @@ const Comparador2 = () => {
           setError(null);
           setLoading(false);
           comprobarSiEstanEnLaCesta(respuesta.data, setResultados, setError, user)
+          scrollArriba()
         } else {
           setError('No se encontraron productos.');
           setResultados([]);
