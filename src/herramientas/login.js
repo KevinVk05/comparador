@@ -1,3 +1,5 @@
+import { BLOQUEO_KEY, INTENTOS_KEY } from "../Login/login";
+
 export function toggle() {
   const cortina = document.getElementById("cortina");
   const login = document.getElementById("login-form");
