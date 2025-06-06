@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../../estilos/comparador.css"
-import { filtrarPorSupermercado } from '../../../herramientas/general';
+import { filtrarPorSupermercado, scrollArriba } from '../../../herramientas/general';
 import ServicioProductos from '../../../servicios/ServicioProductos';
 import Encabezado from '../../comunes/encabezados';
 import ResultadoBusquedaAdmin from './resultadoBusquedaAdmin';
@@ -41,6 +41,7 @@ const ComparadorAdmin = () => {
                     setError(null);
                     setLoading(false);
                     comprobarSiEstanEnLaLista(respuesta.data, setResultados, setError, nombreLista)
+                    scrollArriba()
                 } else {
                     setTimeout(() => {
                         setError('No se encontraron productos.');
