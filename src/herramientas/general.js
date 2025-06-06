@@ -166,6 +166,9 @@ export const listaConResultados = (lista) => {
   return Object.values(lista).some((arr) => arr.length > 0) || [];
 };
 
-export const scrollAbajo= () => {
-  window.scrollTo({ top: 60, behavior: 'auto' });
+export const scrollAbajo = () => {
+  const seccionResultados = document.getElementById("resultados-busqueda");
+  if (seccionResultados) {
+    seccionResultados.scrollIntoView({ behavior: 'smooth' });
+  }
 }
