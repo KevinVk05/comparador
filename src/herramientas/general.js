@@ -166,6 +166,6 @@ export const listaConResultados = (lista) => {
   return Object.values(lista).some((arr) => arr.length > 0) || [];
 };
 
-export const scrollArriba = () => {
+export const scrollAbajo= () => {
   window.scrollTo({ top: 60, behavior: 'auto' });
 }
