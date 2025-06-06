@@ -53,7 +53,9 @@ const Comparador = () => {
           setError(null);
           setLoading(false);
           comprobarSiEstanEnLaCesta(respuesta.data, setResultados, setError, user)
-          scrollAbajo()
+          setTimeout(() => {
+      scrollAbajo();
+    }, 100);
         } else {
           setError('No se encontraron productos.');
           setResultados([]);
