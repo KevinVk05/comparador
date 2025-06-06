@@ -167,5 +167,5 @@ export const listaConResultados = (lista) => {
 };
 
 export const scrollArriba = () => {
-  window.scrollTo({ top: 0, behavior: 'auto' });
+  window.scrollTo({ top: 60, behavior: 'auto' });
 }
