@@ -39,8 +39,6 @@ const Comparador = () => {
     realizarBusqueda()
   };
 
-  scrollArriba()
-
   const realizarBusqueda = (nombreProducto) => {
     const productoABuscar = nombreProducto || producto
     if (!productoABuscar.trim()) {
