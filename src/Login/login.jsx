@@ -5,8 +5,8 @@ import { useAuth } from './AuthProvider';
 import ServicioUsuario from '../servicios/ServicioUsuario';
 import { cambioForm, esEmailValido, iniciarTemporizador } from "../herramientas/login";
 
-const BLOQUEO_KEY = 'loginBloqueadoHasta';
-const INTENTOS_KEY = 'intentosFallidos';
+export const BLOQUEO_KEY = 'loginBloqueadoHasta';
+export const INTENTOS_KEY = 'intentosFallidos';
 const TIEMPO_BLOQUEO_MS = 3 * 60 * 1000;
 const MAX_INTENTOS = 5;
 
@@ -153,7 +153,7 @@ const Login = () => {
                     <div className="col-xl-10">
                         <div className="card rounded-3 text-black">
                             <div className="row g-0">
-                                <div id="cortina" className="top-0 end-0 w-50 h-100 d-flex align-items-center z-3 position-absolute d-none d-lg-block">
+                                <div id="cortina" className="top-0 end-0 w-50 h-100 align-items-center z-3 position-absolute d-none d-lg-flex">
                                     <div className="px-3 py-4 p-md-5 mx-md-4">
                                         <h1>Comparator</h1>
                                         <h4 className="mb-4">Descubre la forma más inteligente de hacer la compra</h4>
