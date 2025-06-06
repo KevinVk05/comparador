@@ -21,7 +21,7 @@ const AnadirListas = ({ setListas}) => {
         <div className="d-flex justify-content-center m-5">
             <button type="button"
                 className="btn btn-success"
-                onClick={anadirLista}>Añadir lista</button>
+                onClick={anadirLista}>A&#241;adir lista</button>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 {childrenModal}
             </Modal>
